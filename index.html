@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>HOME</title>
+    <style>
+        *{
+             margin: 0px;
+             padding: 0px;
+             box-sizing: border-box;
+        }
+        .navlist{
+             height: 10vh;
+             display: flex;
+             width: 50%;
+             justify-content: space-around;
+             align-items: center;
+             margin-left: auto;
+             list-style: none;
+        }
+        .link{
+             text-decoration: none;
+             color: black;
+             font-size: 18px;
+
+        }
+        .home{
+             background-image: linear-gradient(to top, linen 20%, rgba(224, 22, 22, 0.418) 100%);
+        }
+        .about{
+             background-image: linear-gradient(to top, #cfd9df 0%, red 100%);
+        }
+        .home,
+        .about{
+             height: 90vh;
+             position: absolute;
+             width: 100%;
+        }
+        .hope,
+        .hope-about{
+             display: flex;
+             justify-content: space-evenly;
+             align-items: center;
+        }
+        h1{
+             font-size: 50px;
+             margin: 30px 0px;
+        }
+
+
+    </style>
+    </head>
+    <body>
+      <nav>
+          <ul class="navlist">
+              
+            <li><a class="link" href="./marx.html">HOME</a></li>
+            <li><a class="link" href="./tomar.html">About</a></li>
+            <li><a class="link" href="#">Contacts</a></li>
+          </ul>
+      </nav>
+      <main data-router-wrapper>
+          <section data-router-view="home" class="home">
+              <div class="hope">
+                  <div class="prese">
+                      <h1>FLOWLESS Transitions</h1>
+                      <p>Beautiful transition of pages, man!</p>
+                  </div>
+                  <img src="hill.JPG" width="700px" alt="Images">
+              </div>
+          </section>
+      </main>
+    </body>
+</html>
